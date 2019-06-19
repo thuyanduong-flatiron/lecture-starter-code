@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rails</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link href="styles.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="ui grid">
+      <div class="sixteen wide column"><h1 class="header">The Cat Club<h1></div>
+      <div class="eight wide column">
+        <div class="eighty">
+          <form class="ui form">
+            <h3>Add Cat</h3>
+            <input type="text"placeholder="Name">
+            <input type="text"placeholder="Image URL">
+            <input class="ui button" type="submit">
+          </form>
+        </div>
+      </div>
+      <div class="eight wide column">
+        <div class="eighty">
+          <h3>Hobbies</h3>
+          <ul id='hobbies'><ul>
+        </div>
+      </div>
+    </div>
+
+    <div id='cats' class="ui grid"></div>
+
+
+    <script type="text/javascript" src="src/Hobby.js"></script>
+    <script type="text/javascript" src="src/Cat.js"></script>
+    <script type="text/javascript" src="src/index.js"></script>
+  </body>
+</html>

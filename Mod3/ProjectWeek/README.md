@@ -1,0 +1,18 @@
+### We just deployed Project Mode on Learn.co
+
+- Javascript/HTML/CSS front end with Rails backend
+  - You already know how to build a rails server
+  - You'll learn how to make it serve json data later today
+
+- Two models
+  - user has many dogs
+  - shop sells many cars
+
+- You must be able to get and create (or edit) for each module
+
+- You're encouraged to create your models using OOJS classes
+
+- Models should use OOJS and ES6 classes
+
+
+- Scope? Think EverNote Project or CatHobbies
