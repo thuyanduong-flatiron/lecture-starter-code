@@ -43,9 +43,9 @@ Goals:
   - at least two services
   - deploy a separate service to serve your react app
   - point your client at the server
-  - cors configured
+  - CORS configured
     - `*` -> 'frontend.com'
-- Diaster Recovery
+- Disaster Recovery
 
 ## Deploying to Heroku
 - Strategy:
