@@ -26,12 +26,12 @@ body: JSON.stringify({
 ### Building out the frontend (Deliverables)
 - See all Pokemon sprites
 - Create your own Pokemon
-- Delete a pokemon on click
+- Delete a Pokemon on click
 
-### Notes: 
+### Notes:
 - [Documentation of using Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 - `body` of a fetch HAS to be a string!!
 
 #### Announcements:
-- we ARE deploying OOJS labs this weekend (weird location)
-- use this weekend to catch up on labs
+- The rest of Mod 3 is basically building out SPA with CRUD features
+- Lab Reviews coming up: Monsters, Toy Tale

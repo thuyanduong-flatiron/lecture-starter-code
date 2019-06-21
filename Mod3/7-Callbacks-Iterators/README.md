@@ -33,4 +33,4 @@ Goals:
 9. Sort by calories?
 
 ### What about callbacks for addEventListener
-- And what about that mysterious e parameter?
+- And what about that mysterious event parameter?

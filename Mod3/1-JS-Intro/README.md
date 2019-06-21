@@ -32,5 +32,5 @@
 
 
 ### Announcements
-- FSP Groups! Choose Topic and scope by Thursday
+- FSP Groups! Choose topic and scope by Thursday
 - More labs are being deployed right now for JavaScript Events! Work on them
