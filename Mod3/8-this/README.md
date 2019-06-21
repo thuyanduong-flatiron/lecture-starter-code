@@ -21,4 +21,4 @@
 - can't rebind a function
 - how to see if a function has been bound
 - bind a function that has arguments
- - binding both `this` and certain arguments
+- binding both `this` and certain arguments
