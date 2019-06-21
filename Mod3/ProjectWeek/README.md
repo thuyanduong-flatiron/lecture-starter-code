@@ -4,7 +4,7 @@
   - You already know how to build a rails server
   - You'll learn how to make it serve json data later today
 
-- Two models
+- At Least Two models
   - user has many dogs
   - shop sells many cars
 
@@ -12,7 +12,4 @@
 
 - You're encouraged to create your models using OOJS classes
 
-- Models should use OOJS and ES6 classes
-
-
-- Scope? Think EverNote Project or CatHobbies
+- Scope? Think A Large Lab or CatHobbies
