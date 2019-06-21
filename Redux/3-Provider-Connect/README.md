@@ -18,7 +18,7 @@ can be replaced with js```{value}```
 
 ### React-redux
 - [Documentation](https://github.com/reduxjs/react-redux/blob/master/docs/api.md)
-js```npm install --save react-redux```
+js```npm install react-redux```
 
 
 ### Provider

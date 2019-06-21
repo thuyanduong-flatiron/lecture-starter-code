@@ -38,7 +38,7 @@ Thunks get in the dispatch function as an argument, so they can dispatch further
 
 ## Thunk Plumbing
 
-`npm install --save redux-thunk`
+`npm install redux-thunk`
 
 ```
 import { createStore, applyMiddleware, compose } from 'redux'

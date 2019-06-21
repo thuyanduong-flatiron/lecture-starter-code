@@ -82,7 +82,7 @@ What does this app do? What is the Component Tree?
 
 ## Getting Starting with Redux
 
-Installing redux: `npm install --save redux`
+Installing redux: `npm install redux`
 
 
 ### What do we need to build?
