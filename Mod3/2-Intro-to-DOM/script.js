@@ -1,1 +1,1 @@
-console.log('conncted')
+console.log('connected')

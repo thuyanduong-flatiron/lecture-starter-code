@@ -9,9 +9,6 @@
 - functions are the building blocks of JavaScript
 - tells the JavaScript engine what to do and where in the program we are
 
-## Functions and Data Types
-- Pass by value vs pass by reference
-
 # Scope
 - where a variable is born, lives, and dies
 
@@ -23,8 +20,8 @@
 
 # Loops
 - for
-- for...in
-- for...of
-- forEach, map, find, filter, reduce, and sort array methods
+- for...of for arrays
+- for...in for objects
+- forEach, map, find, filter, etc...
 
 ## Callback Functions

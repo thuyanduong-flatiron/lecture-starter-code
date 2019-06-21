@@ -26,12 +26,11 @@
 
 
 ### Functions as Objects
-- What is a callback?
 
 
-
+### Pass by Value versus Pass by Reference
 
 
 ### Announcements
-- FSP Groups!
+- FSP Groups! Choose Topic and scope by Thursday
 - More labs are being deployed right now for JavaScript Events! Work on them
