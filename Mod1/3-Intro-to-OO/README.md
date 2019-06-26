@@ -128,4 +128,13 @@ end
 ```
 
 #### Class variable @@all
-  - it seemed to work to make this an instance method first, and then change it to a class method to demonstrate the difference
+  - A variable that belongs to the entire class, not any one instance
+  - Common use case: keep trak of all instances of a class
+  - Make sure to shovel it into the array when you create a new instance
+```rb
+@@all = []
+
+self.get_all_cats
+  @@all
+end
+```
