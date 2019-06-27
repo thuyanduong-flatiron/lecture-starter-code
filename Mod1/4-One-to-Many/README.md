@@ -15,8 +15,8 @@
   * One object has many objects
   * One object belongs to another object
 * Demonstrate single source of truth
-* Practice passing custom objects as arguments to methods
 * Infer type of method (class or instance) through naming conventions
+* Practice passing custom objects as arguments to methods
 
 ## Deliverables
 
