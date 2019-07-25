@@ -1,58 +1,61 @@
 class Cat {
-  static all = []
-
   constructor(cat){
     this.id = cat.id
     this.name = cat.name
-    Cat.all.push(this)
+    this.image = cat.image || 'http://placekitten.com/g/200/200'
+    // this.hobbies = cat.hobbies
   }
 
-  render(){
-    let catDiv = document.createElement("div")
-    catDiv.classList.add("four", "wide", "column")
-    catDiv.innerHTML = `
-    <div class="ui card">
-      <div class="image">
-        <img src="http://placekitten.com/g/200/200">
-      </div>
-      <div class="content">
-        <p>${this.name}</p>
-        <ul>Hobbies:
-        <ul>
-      </div>
-    </div>
-    `
-    return this.addForm(catDiv)
-  }
+  // renderCatCard(){
+  //   let catDiv = document.createElement("div")
+  //   catDiv.id = `cat-card-${this.id}`
+  //   catDiv.classList.add("four", "wide", "column")
+  //   catDiv.innerHTML = `
+  //   <div class="ui card">
+  //     <div class="image">
+  //       <img src="${this.image}">
+  //     </div>
+  //     <div class="content" id="cat-content-${this.id}">
+  //       <p>${this.name}</p>
+  //     </div>
+  //   </div>
+  //   `
+  //   document.querySelector('#cats').appendChild(catDiv)
+  //   // this.renderHobbies()
+  //   // this.renderForm()
+  // }
 
-  addForm(catDiv){
-    let input = document.createElement('input')
-    input.placeholder = "Enter Hobby ID"
-    let button = document.createElement('button')
-    button.innerText = "Add Hobby"
-    button.addEventListener("click", this.addHobby.bind(this))
-    catDiv.querySelector(".card").appendChild(input)
-    catDiv.querySelector(".card").appendChild(button)
-    return catDiv
-  }
+  // static fetchCats(){
+  //   // fetch('http://localhost:3000/cats')
+  //   // .then(res => res.json())
+  //   // .then(catsArray => {
+  //   //   catsArray.forEach(cat => {
+  //   //     let catInstance = new Cat(cat)
+  //   //     catInstance.renderCatCard()
+  //   //   })
+  //   // })
+  // }
 
-  //Will need to POST to cats table
-  static addCat(){
+  // renderHobbies(){
+  //   let ul = document.createElement('ul')
+  //   ul.id = `cat-hobbies-${this.id}`
+  //   document.querySelector(`#cat-content-${this.id}`).appendChild(ul)
+  //   // this.hobbies.forEach(hobby => {
+  //   //   let li = document.createElement("li")
+  //   //   li.innerText = `${hobby.name}`
+  //   //   ul.append(li)
+  //   // })
+  // }
 
-  }
-
-  //Will need POST to join table
-  addHobby(e){
-    console.log(this, e)
-  }
-
-  //Will need to DELETE to cats table
-  deleteCat(){
-
-  }
-
-  //Will need to PATCH to cats table
-  updateCat(){
-
-  }
+  // renderForm(){
+  //   let select = document.createElement("select")
+  //   Hobby.all.forEach(hobby => {
+  //     select.innerHTML += `
+  //       <option value="${hobby.id}">${hobby.name}</option>
+  //     `
+  //   })
+  //   // let button = document.createElement("button")
+  //   // button.innerText = "Add Hobby"
+  //   // document.querySelector(`#cat-content-${this.id}`).append(select, button)
+  // }
 }
