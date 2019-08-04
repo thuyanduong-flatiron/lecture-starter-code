@@ -22,6 +22,7 @@
 
 ### Promises and what are they
 - [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+- Practice with: http://localhost:300/hello/1
 - pending
 - fulfilled (resolved/rejected)
 - How to unwrap a promise using `.then`
@@ -30,4 +31,3 @@
 ### Promise chaining
 - `.then().then()`
 - Easier to read, easier to manage
-
