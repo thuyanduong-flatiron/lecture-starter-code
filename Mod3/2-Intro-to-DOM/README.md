@@ -2,14 +2,7 @@
 - Tree of Nodes
 
 ### DOM nodes, parent child sibling relationships
-- traversing nodes to selector the desired node
-
-### Grabbing and Manipulating DOM elements
-- Twitter
-- content
-- css styling
-- innerHTML vs. innerText
-- [DIY](https://en.wikipedia.org/wiki/Document_Object_Model)
+- You can traverse from parent to child, or better yet, user selectors 
 
 ### Selectors and how to use them
 
@@ -20,6 +13,13 @@
 | `node.getElementsByTagName()`   | Collection     | HTMLCollection | https://goo.gl/QHozSh |
 | `node.querySelector()`          | Single element | Element        | https://goo.gl/6Pqbcc |
 | `node.querySelectorAll()`       | Collection     | NodeList       | https://goo.gl/vTfXza |
+
+### Practice Manipulating the DOM
+- Twitter
+- content
+- css styling
+- [DIY](https://en.wikipedia.org/wiki/Document_Object_Model)
+- innerHTML vs. innerText
 
 ### DOM CRUD
 - `document.createElement()`

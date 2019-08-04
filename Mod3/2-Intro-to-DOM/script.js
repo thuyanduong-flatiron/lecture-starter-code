@@ -1,1 +1,2 @@
-console.log('connected')
+console.log(document.querySelector("tbody"))
+//What if we move the script tag in index.html...
