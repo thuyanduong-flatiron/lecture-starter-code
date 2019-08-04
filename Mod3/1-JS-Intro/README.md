@@ -4,9 +4,9 @@
 - Learn how to be resourceful
 
 ### Intro to Javascript
+- Invented to compete with native Desktop applications
 - HTML, CSS, and JS (behavior)
-- Set up index.html, script.js, chrome console
-- script tag at the bottom of the .html file?
+- The index.html file MUST contain a script tag reference to the script.js file
 
 ### Learning a New Programming language
 - How to Debug (console.log(), alert(), debugger)
@@ -19,7 +19,8 @@
 - What types and how many?
 
 
-### Functions as Objects
-
-
 ### Pass by Value versus Pass by Reference
+
+
+### Functions as Objects
+- all the difference ways to write functions
