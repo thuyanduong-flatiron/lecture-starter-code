@@ -25,7 +25,6 @@
 ##### Using a gem
 - `rails g serializer cat`
 
-
 ### CRUD
  - We can Read
  - Let's now Create
