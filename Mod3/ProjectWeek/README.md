@@ -10,6 +10,4 @@
 
 - You must be able to get and create (or edit) for each module
 
-- You're encouraged to create your models using OOJS classes
-
 - Scope? Think A Large Lab or CatHobbies
