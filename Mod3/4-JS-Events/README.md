@@ -26,12 +26,9 @@
 ## Some events have default behavior
 - event.preventDefault()
 
-## Event bubbling vs. capturing, and propagation
-- event.target: the innermost node that triggers the event
+## event.currentTarget vs. event.target
 - event.currentTarget: the HTML element addEventListener is attached to
-- by default, event are fired during the bubbling phase
-- event.stopPropagation()
-
+- event.target: the innermost node that triggers the event
 
 ## Additional Resources
 - More about how async works with the stack: https://www.youtube.com/watch?v=8aGhZQkoFbQ
