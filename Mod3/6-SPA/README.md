@@ -1,5 +1,5 @@
-## Fetch Gets and Posts
 # Single Page Applications
+- When <some event> happens, I want to make a <what kind of> fetch call, and manipulate the DOM <how?>
 
 ### Mocking your own backend
 ```
@@ -31,7 +31,3 @@ body: JSON.stringify({
 ### Notes:
 - [Documentation of using Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 - `body` of a fetch HAS to be a string!!
-
-#### Announcements:
-- The rest of Mod 3 is basically building out SPA with CRUD features
-- Lab Reviews coming up: Monsters, Toy Tale
