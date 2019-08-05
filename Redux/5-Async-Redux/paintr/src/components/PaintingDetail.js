@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import { increaseVotes as vote } from "../redux/actions";
+import { vote } from "../redux/actions";
 
 class PaintingDetail extends React.Component {
   render() {
@@ -31,13 +31,11 @@ class PaintingDetail extends React.Component {
   }
 }
 
-const mapStateToProps = (state, ownProps) => {
-  return {
-    painting: state.paintings.find(p => p.id === ownProps.match.params.paintingId)
-  };
-};
+const mapStateToProps = (state, ownProps) => ({
+  painting: state.paintings.find(p => p.id === ownProps.match.params.paintingId)
+})
 
-export default connect(
-  mapStateToProps,
-  { vote }
-)(PaintingDetail);
+const mapDispatchToProps = dispatch => ({
+  vote: (paintingId) => {dispatch(vote(paintingId))}
+})
+export default connect(mapStateToProps, mapDispatchToProps)(PaintingDetail);

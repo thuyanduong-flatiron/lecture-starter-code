@@ -75,13 +75,12 @@ class PaintingForm extends React.Component {
   }
 }
 
-const mapStateToProps = (state, ownProps) => {
-  return {
-    painting: state.paintings.find(p => p.id === ownProps.match.params.paintingId)
-  };
-};
+const mapStateToProps = (state, ownProps) => ({
+  painting: state.paintings.find(p => p.id === ownProps.match.params.paintingId)
+})
 
-export default connect(
-  mapStateToProps,
-  { updatePaintingInfo: updatePainting }
-)(withRouter(PaintingForm));
+const mapDispatchToProps = dispatch => ({
+  updatePaintingInfo: (info) => {dispatch(updatePainting(info))}
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(PaintingForm));

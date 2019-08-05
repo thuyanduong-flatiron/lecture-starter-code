@@ -4,7 +4,7 @@ function changeSearchText(value) {
   return { type: "CHANGE_SEARCH_TEXT", value: value };
 }
 
-function increaseVotes(paintingId) {
+function vote(paintingId) {
   return { type: "INCREASE_VOTES", paintingId };
 }
 
@@ -16,4 +16,4 @@ function updatePainting({ title, name, birthday, deathday, paintingId }) {
   };
 }
 
-export { changeSearchText, increaseVotes, updatePainting };
+export { changeSearchText, vote, updatePainting };
