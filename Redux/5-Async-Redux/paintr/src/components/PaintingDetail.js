@@ -5,7 +5,7 @@ import { increaseVotes as vote } from "../redux/actions";
 
 class PaintingDetail extends React.Component {
   render() {
-    return (
+    return !this.props.painting ? null : (
       <div>
         <img alt={this.props.painting.title} src={this.props.painting.image} />
         <h3>{this.props.painting.title}</h3>
