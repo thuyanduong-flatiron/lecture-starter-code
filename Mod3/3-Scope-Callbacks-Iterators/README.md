@@ -10,7 +10,7 @@
 ## Functions and the Execution Stack
 - tells the JavaScript engine where in the program we are
 
-# Review How to write functions
+# Review How to write Functions (and Hoisting)
 
 # Callbacks
 - passing functions as variables into other functions
