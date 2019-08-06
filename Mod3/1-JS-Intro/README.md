@@ -19,3 +19,4 @@
 
 ### Functions as Objects
 - all the difference ways to write functions
+- hoisting
