@@ -4,10 +4,8 @@
 
 ### How do we handle async code?
 - For example, event listeners
-
-### What if you have multiple async code that depend on each other?
-- https://pokeapi.co/api/v2/pokemon/
-- Given the name of the Pokemon, I want to find out the effect/description of its hidden ability
+- So what would server communication look like since it's async?
+- https://pokeapi.co/api/v2/pokemon
 
 ### Callback Hell
 - Nested callbacks within nested callbacks
