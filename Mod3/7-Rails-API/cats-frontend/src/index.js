@@ -1,3 +1,4 @@
 document.addEventListener('DOMContentLoaded', function(){
-  console.log('DOM loaded')
+  console.log('DOM is loaded')
+  console.log('This app uses Semantic UI for styling')
 })

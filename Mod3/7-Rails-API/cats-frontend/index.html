@@ -9,28 +9,31 @@
 
   </head>
   <body>
-    <div class="ui grid">
-      <div class="sixteen wide column"><h1 class="header">The Cat Club<h1></div>
-      <div class="eight wide column">
-        <div class="eighty">
-          <form class="ui form">
-            <h3>Add Cat</h3>
-            <input type="text"placeholder="Name">
-            <input type="text"placeholder="Image URL">
-            <input class="ui button" type="submit">
-          </form>
-        </div>
-      </div>
-      <div class="eight wide column">
-        <div class="eighty">
-          <h3>Hobbies</h3>
-          <ul id='hobbies'><ul>
-        </div>
-      </div>
+    <div class="center"><h1 class="header">The Cat Club<h1></div>
+    <div id="main" class="ui grid">
+
+          <div class="eight wide column center">
+            <div class="eighty">
+              <form class="ui form">
+                <h3>Add Cat</h3>
+                <input type="text"placeholder="Name">
+                <input type="text"placeholder="Image URL">
+                <input class="ui button" type="submit">
+              </form>
+            </div>
+          </div>
+
+          <div class="eight wide column center">
+            <div class="eighty">
+              <h3>Hobbies</h3>
+              <ul id='hobbies'><ul>
+            </div>
+          </div>
+
+          <div id='cats' class="ui grid">
+          </div>
+
     </div>
-
-    <div id='cats' class="ui grid"></div>
-
 
     <script type="text/javascript" src="src/Hobby.js"></script>
     <script type="text/javascript" src="src/Cat.js"></script>

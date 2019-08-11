@@ -22,15 +22,7 @@
 
 ##### Custom Serializers
 
-##### Using a gem
-- `rails g serializer cat`
-
 ### CRUD
  - We can Read
  - Let's now Create
  - How would we do Update or Delete?
-
-### Transition to Project Mode
-- Before Project Pitches, you must have:
-   - Backend models and relationships drawn out
-   - Frontend wireframe drawings of you user interface
