@@ -1,54 +1,46 @@
 # Class Inheritance
 
-- "Everything is an object."  What does that mean?  Where do all the methods on `"hi".methods` come from?
-    - All classes inherit from Ruby Object class, which in turn inherit from other more abstract classes that we won't be dealing with
+## Review "Everything Is an Object"
+- `puts "hi".methods` in irb
+- What is all this stuff and where does it come from?
+  - `"hi".class`
+  - `"hi".class.ancestors`
+- Method Resolution Order (MRO)
 
-- Define Animal class with Dog and Cat inheriting.  Explain `<` syntax.  Give Animal basic methods like `.walk` and `.speak`.  Demo that new Dog and Cat instances have those methods
-    - Vocab:  **Child class, Parent class, Sub class, Super class, inherits from**
+## Let's Practice It
+- Define Animal class with Dog and Cat inheriting
+- The`<` syntax is used for specifying inheritance
+    - `class Dog < Animal` means that Dog inherits form Animal
+    - Vocab:  *Child class, Parent class, Sub class, Super class, inherits from*
+- Give Animal basic methods like `#walk` and `#speak`.  
+  - `ella.walk` and `ella.speak` works!
+- What happens if we have `#speak` in child classes
+  - We can _override_ methods
 
-- **Override** `.speak` in child classes.
-
-- Refactor to show chain inheritance:  `Animal < Mammal < Dog/Cat`.
-    - `cat.class`
-    - `cat.class.superclass`
-    - `cat.class.ancestors`
+- Refactor to show chain inheritance:  `Dog/Cat < Mammal < Animal`.
+    - `ella.class`
+    - `ella.class.superclass`
+    - `ella.class.ancestors`
     - `is_a?` vs `instance_of?`
 
-- Demo use of `super()` to show how to call original methods
+## super(), When you want to call the parent from the child
+- `super()` is common used in the initialize method
+- We can also call `super()` in any instance method
 
-- Build out initialize and show how inheritance can be used there, with `super`.
 
-
-# Modules  
-
-- Build `Fish < Animal`.  Add `can_swim?` to `Fish` class.  But this is problematic--some animals can swim, but doesn't really fit on `Mammal` class.  Build a module:
+## Modules  
+- Build `Fish < Animal` class  
+- Let's build a `#can_swim?` for the `Fish` class.  
+  - But this is problematic--some animals can swim, but doesn't really fit on `Mammal` class
 
 ```
 module Swimmable
-    def can_swim?
-        return true
-    end
-
     def swim
         return "going for a dip"
     end
 end
 ```
-
-- include `Swimmable` in relevant classes.  Show MRO.
-- add a second module and give both a `take_a_trip()` method and show that the MRO is in reverse order
-
-- namespacing--used for organization and prevent *naming collisions*:
-
-```
-module Mammal
-  class Dog
-  end
-
-  class Cat
-  end
-end
-```
+- Namespacing--used for organization and prevent *naming collisions*:
 
 # Private vs Public methods
 
