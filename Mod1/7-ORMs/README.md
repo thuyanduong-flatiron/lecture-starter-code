@@ -2,15 +2,14 @@
 
 ## Organizing Big Projects
 - Gemfile, `bundle install`, and Gemfile.lock
-- Rakefile, `rake -T`, and building our own Rake tasks
+- `environment.rb` file to set up database connection and other aspects of code environment
 - db folder
-
-- Correctly implement foreign key relationship
-- Create SQL tables that correspond to Ruby classes
-- Organize code files in a logical manner
-- Utilize an environment file to set up database connection and other aspects of code environment
+- Rakefile, `rake -T`, and building our own Rake tasks
+  - Have access to everything through require_relative
 
 ## Deliverables
+- Create SQL tables that correspond to Ruby classes Author and Book
+- Correctly implement foreign key relationship
 - Build out methods on the Author model to perform all CRUD actions at the database level
 
 #### SQL Practice
