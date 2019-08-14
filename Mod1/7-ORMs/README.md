@@ -10,6 +10,7 @@
 ## Deliverables
 - Create SQL tables that correspond to Ruby classes Author and Book
 - Build out methods on the Author model to perform all CRUD actions at the database level
+- initialize, create, save, all, find, delete
 
 
 
