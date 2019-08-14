@@ -8,9 +8,9 @@
   - Have access to everything through require_relative
 
 ## Deliverables
-- Create SQL tables that correspond to Ruby classes Author and Book
+- Create SQL tables that correspond to Ruby classes Author
 - Build out methods on the Author model to perform all CRUD actions at the database level
-- initialize, create, save, all, find, delete
+- initialize, create, all, find, save, delete
 
 
 
