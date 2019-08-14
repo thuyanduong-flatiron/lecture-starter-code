@@ -12,6 +12,21 @@
 - Correctly implement foreign key relationship
 - Build out methods on the Author model to perform all CRUD actions at the database level
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #### SQL Practice
 - Write the SQL to create tables for Books (id, title, author_id) and Authors (id, name)
 - Write the SQL to get all Authors
@@ -19,3 +34,15 @@
 - Write the SQL to get all Books by a given author, given the author's id
 - Write the SQL to get all Books by a given author, given the author's name
 - Write the SQL to update a Book's title
+
+
+
+
+
+
+
+
+
+
+
+#
