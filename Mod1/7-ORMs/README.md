@@ -25,7 +25,7 @@
 
 
 
-# Intro to ORMS
+# Intro to ORMs (Object Relational Mapping)
 
 ## Organizing Big Projects
 - Gemfile, `bundle install`, and Gemfile.lock
