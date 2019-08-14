@@ -2,7 +2,8 @@
 
 ## Organizing Big Projects
 - Gemfile, `bundle install`, and Gemfile.lock
-- Rakefile and building our own Rake tasks
+- Rakefile, `rake -T`, and building our own Rake tasks
+- db folder
 
 - Correctly implement foreign key relationship
 - Create SQL tables that correspond to Ruby classes
