@@ -28,12 +28,13 @@
 
 
 #### SQL Practice
-- Write the SQL to create tables for Books (id, title, author_id) and Authors (id, name)
-- Write the SQL to get all Authors
+- Write the SQL to create tables for Authors (id, name) and Books (id, title, author_id)
 - Write the SQL to create a new author, given the author's name
-- Write the SQL to get all Books by a given author, given the author's id
-- Write the SQL to get all Books by a given author, given the author's name
-- Write the SQL to update a Book's title
+- Write the SQL to create a new book, given the book's title and author's id
+- Write the SQL to get all Authors
+- Write the SQL to update a Book's title (given it's id)
+- Write the SQL to delete a Book (given it's title)
+- Write the SQL to get all Books by an author, given the author's name
 
 
 
