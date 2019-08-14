@@ -1,3 +1,30 @@
+#### SQL Practice
+- Write the SQL to create tables for Authors (id, name)
+- Write the SQL to create a new author, given the author's name
+- Write the SQL to get all Authors
+- Write the SQL to find an Author by their name
+- Write the SQL to update an Author's name (given their id)
+- Write the SQL to delete an Author (given their id)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Intro to ORMS
 
 ## Organizing Big Projects
@@ -12,28 +39,6 @@
 - Build out methods on the Author model to perform all CRUD actions at the database level
 - initialize, create, all, find, save, delete
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#### SQL Practice
-- Write the SQL to create tables for Authors (id, name)
-- Write the SQL to create a new author, given the author's name
-- Write the SQL to get all Authors
-- Write the SQL to find an Author by their name
-- Write the SQL to update an Author's name (given their id)
-- Write the SQL to delete an Author (given their id)
 
 
 
