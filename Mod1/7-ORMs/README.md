@@ -9,7 +9,6 @@
 
 ## Deliverables
 - Create SQL tables that correspond to Ruby classes Author and Book
-- Correctly implement foreign key relationship
 - Build out methods on the Author model to perform all CRUD actions at the database level
 
 
@@ -28,13 +27,12 @@
 
 
 #### SQL Practice
-- Write the SQL to create tables for Authors (id, name) and Books (id, title, author_id)
+- Write the SQL to create tables for Authors (id, name)
 - Write the SQL to create a new author, given the author's name
-- Write the SQL to create a new book, given the book's title and author's id
 - Write the SQL to get all Authors
-- Write the SQL to update a Book's title (given it's id)
-- Write the SQL to delete a Book (given it's title)
-- Write the SQL to get all Books by an author, given the author's name
+- Write the SQL to find an Author by their name
+- Write the SQL to update an Author's name (given their id)
+- Write the SQL to delete an Author (given their id)
 
 
 
@@ -45,5 +43,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+##### Answers
+`CREATE TABLE authors (id INTEGER PRIMARY KEY, name TEXT);`
+`INSERT INTO authors (name) VALUES ("Ann");`
+`SELECT * FROM authors;`
+`SELECT * FROM authors WHERE name = ?;`
+`UPDATE authors SET name = ? WHERE id = ?;`
+`UPDATE authors SET name = ? WHERE id = ?;`
+`DELETE FROM authors WHERE name = ?;`
 
 #
