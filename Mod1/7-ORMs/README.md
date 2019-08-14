@@ -2,7 +2,7 @@
 - Write the SQL to create tables for Authors (id, name)
 - Write the SQL to create a new author, given the author's name
 - Write the SQL to get all Authors
-- Write the SQL to find an Author by their name
+- Write the SQL to find an Author by their id
 - Write the SQL to update an Author's name (given their id)
 - Write the SQL to delete an Author (given their id)
 
@@ -65,7 +65,6 @@
 `INSERT INTO authors (name) VALUES ("Ann");`
 `SELECT * FROM authors;`
 `SELECT * FROM authors WHERE name = ?;`
-`UPDATE authors SET name = ? WHERE id = ?;`
 `UPDATE authors SET name = ? WHERE id = ?;`
 `DELETE FROM authors WHERE name = ?;`
 
