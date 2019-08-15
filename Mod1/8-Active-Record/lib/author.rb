@@ -19,7 +19,7 @@ class Author
 
   def self.all
     get_all_sql = <<-SQL
-        SELECT * FROM authors
+      SELECT * FROM authors
     SQL
     db_authors_array = DB[:conn].execute(get_all_sql)
     db_authors_array.map{ |row|
