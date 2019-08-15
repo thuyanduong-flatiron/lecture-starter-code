@@ -64,8 +64,6 @@
 `CREATE TABLE authors (id INTEGER PRIMARY KEY, name TEXT);`
 `INSERT INTO authors (name) VALUES ("Ann");`
 `SELECT * FROM authors;`
-`SELECT * FROM authors WHERE name = ?;`
+`SELECT * FROM authors WHERE id = ?;`
 `UPDATE authors SET name = ? WHERE id = ?;`
-`DELETE FROM authors WHERE name = ?;`
-
-#
+`DELETE FROM authors WHERE id = ?;`
