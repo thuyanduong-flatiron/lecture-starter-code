@@ -1,113 +1,39 @@
-SETUP:  Copy last lecture 'author.rb' final code into here.  Delete everything in db file.  Copy this repo's Gemfile, README.
+# Intro to Active Record
 
+### Review on ORMs
 
-- Go over objectives
+### Active Record Set Up (and how that's different)
+- new gems in your `Gemfile`
+- `Rakefile` has 1 task, but if we utilize our new gems...
+  - We get access to all these new tasks we can see with `rake -T`
+- `environment.rb` is a little different too
 
-- Review author-backup created earlier in the week
+### Migration Files and DB Migrations
+- Migration files are used to track our database changes over time
+  - Tracks the architectural (schema) changes from creation to present snapshot
+- With ActiveRecord, to create a migration file
+  `rake db:create_migration NAME=create_authors_table`
+- What's the timestamp in the file name?
+- Migrations are "down" or "up" and have a def change method
+  - See ActiveRecord::Migration docs
+- `db:migrate:status` to see the migration status
+- `rake db:migrate` to run the migration
+- Check your `schema.rb` to see the current snapshot of your database
+- `rake db:rollback` to undo the last migration
 
-- Show empty Seed file and put in a few `find_or_create` statements.  
+### ActiveRecord::Base
+- Let's clear out our Author class
+  - Now nothing works
+- Let's Inherit from ActiveRecord::Base
+  - Everything works again! But how?
+    - Review inheritance
+  - you can have both regular instance/class methods with ActiveRecord methods
 
-- show updated gem file.
-- Point out new methods of `find_by_name` and `find_or_create`
-- What is Rake? (review)
-    - Helps to do tasks
-    - For example `rake db:migrate`
-
-- get active record
-
-connect to database
-    - in environment file
-    old way:
-```rb
-    require 'sqlite3'
-    require 'require_all'
-    require_all 'lib'
-    # setting up the database connection (old way)
-    DB = SQLite3::Database.new("chinook.db")
-```
-
-new way:
-
-```rb
-    ActiveRecord::Base.establish_connection({
-    adapter: 'sqlite3',
-    database: 'test.db',
-})
-```
-
-Test.db doesn't exist, so what will happen?
-
-```rb
-desc "Runs a console"
-task :console do
-    require_relative "environment.rb"
-    pry.start
-end
-```
-
-ActiveRecord::Base.connection - shows some of the connection stuff.
-
-ActiveRecord::Base  # point out namespacing /module
-    - class within AR
-    - used to establish connection
-    - in labs used to access methods we've been writing in SQL
-
-make a db folder and put dbs in there.  make sub directory migrate
-
-Rake -T has not added any extra tasks as expected
-http://api.rubyonrails.org/classes/ActiveRecord/Tasks/DatabaseTasks.html  
-
-Gemfile
-    gem 'activerecord'
-    gem 'sinatra-activerecord'
-[INCOMPLETE]
-
-```rb
-config/database.yml
-    development:
-      adapter: sqlite3
-      database: db/development.sqlite3
-      pool: 5
-      timeout: 5000
-```
-
-config/environment.rb
-```rb
-    require 'bundler/setup'
-    Bundler.require
-
-    ActiveRecord::Base.establish_connection(
-      adapter: 'sqlite3',
-      database: "db/development.sqlite"
-    )
-
-    ActiveRecord::Base.logger = Logger.new(STDOUT)
-
-    require_all 'lib'
-```
-
-Make a migration
-    up/down vs change
-
-```rb
-class CreateArtists < ActiveRecord::Migration
-
-    def change
-        create_table :artists do |t|
-            t.string :name
-        end
-    end
-
-end
-```
-
-in rake console
-    migration = CreateArtists.new
-    ls migration to show some methods
-    migration.change to execute
-
-sqlite3 db/test.db
-.tables
-.schema artists
-
-add a column
+### Seed File/Data
+- `rake db:seed` and source code
+- To set up your project
+- Create migration files to make your DB
+    `rake db:create_migration NAME=create_authors_table`
+- `rake db:migrate` to make your DB and its tables
+- `rake db:seed` to add in some starter data
+- Now you're ready to go!
