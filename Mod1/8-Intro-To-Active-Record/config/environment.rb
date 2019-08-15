@@ -1,5 +1,7 @@
 require 'bundler/setup'
 Bundler.require
+require 'require_all'
+require_all './lib'
 
 # setting up the database connection (old way)
 # DB = {
