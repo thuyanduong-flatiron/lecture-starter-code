@@ -20,6 +20,7 @@
 - `rake db:migrate` to run the migration
 - Check your `schema.rb` to see the current snapshot of your database
 - `rake db:rollback` to undo the last migration
+- Spelling matters :/
 
 ### ActiveRecord::Base
 - Let's clear out our Author class
@@ -28,6 +29,7 @@
   - Everything works again! But how?
     - Review inheritance
   - you can have both regular instance/class methods with ActiveRecord methods
+- Again, spelling and pluralization matters :/
 
 ### Seed File/Data
 - `rake db:seed` and source code
