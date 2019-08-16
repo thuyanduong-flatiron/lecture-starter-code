@@ -30,6 +30,7 @@
     - Review inheritance
   - you can have both regular instance/class methods with ActiveRecord methods
 - Again, spelling and pluralization matters :/
+- `.plauralize` and `.singularize`
 
 ### Seed File/Data
 - `rake db:seed` and source code
