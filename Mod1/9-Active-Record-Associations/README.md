@@ -12,6 +12,11 @@
 - A doctor belongs to a single hospital
 - One hospital can have many doctors
 
+## Migrations
+- Addition to the database
+- "Version Control"
+- Set of changes to the shape of our database
+
 ## ActiveRecord Modeling Conventions
 - File called `doctor.rb` defines a class `Doctor`
 - Table is called `doctors`
@@ -19,11 +24,6 @@
   - File name and class name must match (words, not title case)
 `belongs_to :hospital`
 `has_many :hospitals`
-
-## Migrations
-- Addition to the database
-- "Version Control"
-- Set of changes to the shape of our database
 
 ### Steps
 1. Create migration
