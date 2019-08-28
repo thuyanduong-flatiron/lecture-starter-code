@@ -3,9 +3,9 @@ import Form from './Form'
 import TaskList from './TaskList'
 
 const sampleTasks = [
-  {id:1, text: "wake up", done: true},
-  {id:2, text: "eat lunch", done: false},
-  {id:3, text: "go to sleep", done: false}
+  {id:1, text: "wake up"},
+  {id:2, text: "eat lunch"},
+  {id:3, text: "go to sleep"}
 ]
 
 class App extends Component {

@@ -1,6 +1,4 @@
 # React Component Lifecycle
-
-## Hooks
 - For class components that extend React.Component
 
 ## Available Methods
@@ -37,6 +35,8 @@
 - ComponentDidMount
 - ComponentDidUpdate
 - Event handlers
+
+### React Hooks?
 
 ### Less used methods
 - `shouldComponentUpdate()`

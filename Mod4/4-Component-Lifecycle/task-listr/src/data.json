@@ -2,18 +2,15 @@
   "tasks": [
     {
       "id": 1,
-      "text": "wake up",
-      "done": true
+      "text": "wake up"
     },
     {
       "id": 2,
-      "text": "eat lunch",
-      "done": false
+      "text": "eat lunch"
     },
     {
       "id": 3,
-      "text": "go to sleep",
-      "done": false
+      "text": "go to sleep"
     }
   ]
 }

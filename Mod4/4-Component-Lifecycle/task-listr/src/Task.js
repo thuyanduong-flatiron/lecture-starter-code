@@ -2,18 +2,22 @@ import React from 'react'
 
 class Task extends React.Component {
   constructor(props){
-    super(props)
+    super(props)//how to initialize state based on initial props
     this.state = {
-      done: props.task.done
+      color: "black"
     }
   }
 
   render(){
     return(
       <div>
-        <button>x</button>
-        {this.props.task.text}
-        <input type="checkbox" checked={this.state.done} onChange={() => {}}/>
+        <b
+          onClick={() => {}}
+          style={{color: this.state.color}}
+        >
+          {this.props.task.text}
+        </b>
+        <button onClick={() => {}}>x</button>
       </div>
     )
   }
