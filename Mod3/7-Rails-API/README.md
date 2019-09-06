@@ -8,7 +8,7 @@
 - Use relationship between models
 
 ### Getting Started
-`rails new --api <project_name>`
+`rails new <app_name> --api --database=postgresql`
 
 ### Useful Rails Commands
 - `rails g model cat`
