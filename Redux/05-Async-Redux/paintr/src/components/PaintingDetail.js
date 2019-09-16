@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { vote } from "../redux/actions";
 
@@ -39,3 +39,4 @@ const mapDispatchToProps = dispatch => ({
   vote: (paintingId) => {dispatch(vote(paintingId))}
 })
 export default connect(mapStateToProps, mapDispatchToProps)(PaintingDetail);
+//export default connect(mapStateToProps, {vote})(PaintingDetail);

@@ -4,7 +4,7 @@ import paintingsData from "../paintings.json";
 const searchTextReducer = (state = "", action) => {
   switch (action.type) {
     case "CHANGE_SEARCH_TEXT":
-      return action.value;
+      return action.payload;
     default:
       return state;
   }
@@ -14,7 +14,7 @@ const paintingsReducer = (state = paintingsData.paintings, action) => {
   switch (action.type) {
     case "INCREASE_VOTES":
       return state.map(painting => {
-        if (painting.id === action.paintingId) {
+        if (painting.id === action.payload) {
           return {
             ...painting,
             votes: painting.votes + 1
@@ -25,7 +25,7 @@ const paintingsReducer = (state = paintingsData.paintings, action) => {
       });
     case "UPDATE_PAINTING":
       return state.map(painting => {
-        if (painting.id === action.paintingId) {
+        if (painting.id === action.payload.paintingId) {
           return {
             ...painting,
             title: action.payload.title,
