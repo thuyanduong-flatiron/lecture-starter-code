@@ -30,14 +30,14 @@ class Project
 
 end
 
-trevor = Backer.new("Trevor")
-chine = Backer.new("Chine")
+ann = Backer.new("Ann")
+paul = Backer.new("Paul")
 karaoke = Project.new("Karaoke Machine")
-iron = Project.new("Iron Board")
+iron = Project.new("Ironing Board")
 snacks = Project.new("Snack Bar")
 
-trevor.back_project(snacks)
-chine.back_project(karaoke)
-snacks.add_backer(chine)
+paul.back_project(karaoke)
+ann.back_project(snacks)
+snacks.add_backer(paul)
 
 binding.pry
