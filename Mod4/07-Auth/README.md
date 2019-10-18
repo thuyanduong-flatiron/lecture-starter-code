@@ -5,7 +5,7 @@
  - This lecture aims to clarify and explain the Auth lab
  - There are many ways to implement Auth, Flatiron has chosen to teach you this specific way
 
-## Authentication vs. Authorization
+## How to Just Have a Login Feature (No Auth)
 
 ### Authentication
 - Confirming who you are (Identity)
@@ -29,7 +29,6 @@
 - Rails checks the token and authorizes based on that info
 
 
-
 ## Rails Authentication Review
 
 ### bcrypt
@@ -39,6 +38,21 @@ We don't want plain text passwords in your database
   - _hashed_ ('one way' function, can't recover the original value)
   - _salted_ - add random string to the password 'password123' + 'aslkdfjalskdfjkasjdf'
   - `has_secure_password` macro
+
+```rb
+class AddPasswordToUsers < ActiveRecord::Migration[5.2]
+  def change
+    add_column :users, :password_digest, :string
+  end
+end
+```
+
+```rb
+has_secure_password
+validates :username, uniqueness: { case_sensitive: false }
+```
+
+Re-migrate and re-seed the database
 
 ### /login (auth_controller)
 - route accepts the username and password

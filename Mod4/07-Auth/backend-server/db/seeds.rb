@@ -1,5 +1,10 @@
+User.destroy_all
+
 15.times do
   User.create(
-    username: Faker::Friends.character, password: 'hi', avatar: Faker::Fillmurray.image, bio: Faker::Friends.quote
+    username: Faker::TvShows::Friends.character.split(/ /).join(),
+    # password: 'hi',
+    avatar: Faker::Fillmurray.image,
+    bio: Faker::TvShows::Friends.quote
   )
 end
