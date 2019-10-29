@@ -19,9 +19,8 @@
 - on creation of element?
 
 ## Practice
-- When click of email -> "send an email"
+- When click of email -> alert("sent an email")
 - When click of submit -> add new instructor
-- When click of row -> "view profile"
 
 ## Some events have default behavior
 - event.preventDefault()
