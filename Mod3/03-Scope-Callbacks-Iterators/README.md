@@ -1,3 +1,6 @@
+# Functions
+- And the many ways to write them
+
 # Scope
 - where a variable is born, lives, and dies
 
@@ -7,10 +10,7 @@
 - Scope Chain
 - Lexical Scoping (where a function is written, NOT where it is invoked)
 
-## Functions and the Execution Stack
 - tells the JavaScript engine where in the program we are
-
-# Review How to write Functions
 
 # Callbacks
 - passing functions as variables into other functions
@@ -18,7 +18,7 @@
 ## Building our own map
 
 
-### Goals:
+### Bonus:
 1. Just the name of all the cereals?
 2. All cereals by a certain manufacturer?
 3. The names of all cereals manufactured by General Mills?
