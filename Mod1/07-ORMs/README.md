@@ -1,10 +1,14 @@
-#### SQL Practice
-- Write the SQL to create tables for Authors (id, name)
-- Write the SQL to create a new author, given the author's name
-- Write the SQL to get all Authors
-- Write the SQL to find an Author by their id
-- Write the SQL to update an Author's name (given their id)
-- Write the SQL to delete an Author (given their id)
+Given that I create a table using:
+
+`CREATE TABLE users (id INTEGER PRIMARY KEY, username TEXT);`
+
+
+#### How would we....
+- Write the SQL to create a new user with a username of 'coffee_dad'?
+- Write the SQL to get all Users?
+- Write the SQL to find an User by their id?
+- Write the SQL to update an Users's username (given their id)?
+- Write the SQL to delete an User (given their id)?
 
 
 
@@ -24,20 +28,32 @@
 
 
 
+
+
+
+
+
+
+## Let's build Twitter app
+
+## Problem: What happens to all of our data when we restart our app?
 
 # Intro to ORMs (Object Relational Mapping)
+ - No coding along, sit back and relax
 
 ## Organizing Big Projects
-- Gemfile, `bundle install`, and Gemfile.lock
-- `environment.rb` file to set up database connection and other aspects of code environment
-- db folder
-- Rakefile, `rake -T`, and building our own Rake tasks
-  - Have access to everything through require_relative
+- Gemfile and Gemfile.lock
+- environment.rb has some new code
+- twitter.db
 
-## Deliverables
-- Create SQL tables that correspond to Ruby classes Author
-- Build out methods on the Author model to perform all CRUD actions at the database level
-- initialize, create, all, find, save, delete
+## Solution...
+- We already know OO Programming
+ - We already have a User class
+ - We can make instances of User
+ - And can call instance methods of those instance
+
+- Create methods that will SAVE to our DB table!!!
+  - CRUD
 
 
 
@@ -61,9 +77,11 @@
 
 
 ##### Answers
-`CREATE TABLE authors (id INTEGER PRIMARY KEY, name TEXT);`
-`INSERT INTO authors (name) VALUES ("Ann");`
-`SELECT * FROM authors;`
-`SELECT * FROM authors WHERE id = ?;`
-`UPDATE authors SET name = ? WHERE id = ?;`
-`DELETE FROM authors WHERE id = ?;`
+`CREATE TABLE users (id INTEGER PRIMARY KEY, username TEXT);`
+`INSERT INTO users (username) VALUES ("ann");`
+`SELECT * FROM users;`
+`SELECT * FROM users WHERE id = ?;`
+`UPDATE users SET name = ? WHERE id = ?;`
+`DELETE FROM users WHERE id = ?;`
+
+SELECT LAST_INSERT_ROWID()

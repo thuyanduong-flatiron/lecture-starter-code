@@ -12,7 +12,7 @@
 - Migration files are used to track our database changes over time
   - Tracks the architectural (schema) changes from creation to present snapshot
 - With ActiveRecord, to create a migration file
-  `rake db:create_migration NAME=create_authors_table`
+  `rake db:create_migration NAME=create_users_table`
 - What's the timestamp in the file name?
 - Migrations are "down" or "up" and have a def change method
   - See ActiveRecord::Migration docs
@@ -23,7 +23,7 @@
 - Spelling matters :/
 
 ### ActiveRecord::Base
-- Let's clear out our Author class
+- Let's clear out our User class
   - Now nothing works
 - Let's Inherit from ActiveRecord::Base
   - Everything works again! But how?
@@ -36,7 +36,7 @@
 - `rake db:seed` and source code
 - To set up your project
 - Create migration files to make your DB
-    `rake db:create_migration NAME=create_authors_table`
+    `rake db:create_migration NAME=create_users_table`
 - `rake db:migrate` to make your DB and its tables
 - `rake db:seed` to add in some starter data
 - Now you're ready to go!
