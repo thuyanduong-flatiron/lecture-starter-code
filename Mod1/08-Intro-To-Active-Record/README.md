@@ -1,19 +1,23 @@
 # Intro to Active Record
 
 ### Review on ORMs
- - bridge the gap between Ruby World and Database Land
+ - Bridge the gap between Ruby World and Database Land
+
+### Introducing ActiveRecord::Base class
+ - What happens when I comment out all of the code in User.rb?
 
 #### Is there a need for our tools/console.rb file now??????
  - binding.pry
- - Let's introduce rake for that
+ - Let's introduce `rake` for that
    - Why use rake?
       - Because we can use it for so much more than starting a pry!!
 
 ### Active Record Set Up (and how that's different)
 - new gems in your `Gemfile`
-- `Rakefile` has 1 task, but if we utilize our new gems...
-  - We get access to all these new tasks we can see with `rake -T`
 - `environment.rb` is a little different too
+- `Rakefile` can create custom tasks,
+  - But if we utilize our new gems...
+  - We get access to all these new tasks we can see with `rake -T`
 
 ### Migration Files and DB Migrations
 - Migration files are used to track our database changes over time
