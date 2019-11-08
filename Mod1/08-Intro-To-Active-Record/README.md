@@ -2,10 +2,11 @@
 
 ### Review on ORMs
  - Bridge the gap between Ruby World and Database Land
- - Let's create a USERS table again
 
 ### Introducing ActiveRecord::Base class
  - What happens when I comment out all of the code in User.rb?
+ - How does it know which model is mapped to which table?
+ - You can have both regular instance/class methods with ActiveRecord methods
 
 #### Is there a need for our tools/console.rb file now??????
  - binding.pry
@@ -33,9 +34,6 @@
 - Check your `schema.rb` to see the current snapshot of your database
 - `rake db:rollback` to undo the last migration
 - Spelling matters :/
-
-### ActiveRecord::Base
-- you can have both regular instance/class methods with ActiveRecord methods
 
 ### Seed File/Data
 - `rake db:seed` and source code
