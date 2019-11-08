@@ -1,4 +1,4 @@
-class Author
+class User
   attr_accessor :name, :id
 
   def initialize(name, id=nil)

@@ -1,6 +1,13 @@
 # Intro to Active Record
 
 ### Review on ORMs
+ - bridge the gap between Ruby World and Database Land
+
+#### Is there a need for our tools/console.rb file now??????
+ - binding.pry
+ - Let's introduce rake for that
+   - Why use rake?
+      - Because we can use it for so much more than starting a pry!!
 
 ### Active Record Set Up (and how that's different)
 - new gems in your `Gemfile`
