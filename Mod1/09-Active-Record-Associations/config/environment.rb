@@ -5,7 +5,7 @@ require_all './lib'
 
 ActiveRecord::Base.establish_connection(
   adapter: 'sqlite3',
-  database: "db/hospitals.db"
+  database: "db/twitter.db"
 )
 
 ActiveRecord::Base.logger = Logger.new(STDOUT)
