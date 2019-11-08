@@ -1,24 +1,20 @@
 require_relative 'config/environment'
 # require 'sinatra/activerecord/rake'
 
-desc "Loads a console"
-task :console do
-    binding.pry
-end
+# desc "Loads a console"
+# task :console do
+#     binding.pry
+# end
 
 # desc "Set up database"
 # task :db_setup do
-#     drop_author_table_sql = <<-SQL
-#         DROP TABLE IF EXISTS authors;
-#     SQL
-#     DB.execute(drop_author_table_sql)
-#     author_sql = <<-SQL
-#         CREATE TABLE IF NOT EXISTS authors(
+#     drop_users_table_sql = "DROP TABLE IF EXISTS users;"
+#     DB.execute(drop_users_table_sql)
+#     users_sql = "CREATE TABLE IF NOT EXISTS users(
 #             id INTEGER PRIMARY KEY,
-#             name TEXT
-#         );
-#     SQL
-#     DB.execute(author_sql)
+#             username TEXT
+#         );"
+#     DB.execute(users_sql)
 # end
 
 # desc "Seed database"
