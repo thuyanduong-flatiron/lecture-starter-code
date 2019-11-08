@@ -13,7 +13,7 @@ class User
   def self.create(name)
     user = User.new(name)
     create_user_sql = <<-SQL
-      INSERT INTO user (username) VALUES (?)
+      INSERT INTO users (username) VALUES (?)
     SQL
     DB[:conn].execute(create_user_sql, name)
     new_id = DB[:conn].execute("SELECT last_insert_rowid()")[0][0]
