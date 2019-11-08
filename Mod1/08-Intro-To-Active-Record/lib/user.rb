@@ -2,7 +2,7 @@ class User
   attr_accessor :username, :id
 
   def initialize(username, id=nil)
-    @name = name
+    @username = username
     @id = id
   end
 
