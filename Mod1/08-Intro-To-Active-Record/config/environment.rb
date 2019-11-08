@@ -11,7 +11,7 @@ DB = {
 # setting up the database connection (new way)
 # ActiveRecord::Base.establish_connection(
 #   adapter: 'sqlite3',
-#   database: "db/user.db"
+#   database: "db/twitter.db"
 # )
-#
+
 # ActiveRecord::Base.logger = Logger.new(STDOUT)
