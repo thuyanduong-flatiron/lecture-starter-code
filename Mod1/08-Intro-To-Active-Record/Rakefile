@@ -9,12 +9,18 @@ require_relative 'config/environment'
 # desc "Set up database"
 # task :db_setup do
 #     drop_users_table_sql = "DROP TABLE IF EXISTS users;"
-#     DB.execute(drop_users_table_sql)
+#     DB[:conn].execute(drop_users_table_sql)
 #     users_sql = "CREATE TABLE IF NOT EXISTS users(
 #             id INTEGER PRIMARY KEY,
 #             username TEXT
 #         );"
-#     DB.execute(users_sql)
+#     DB[:conn].execute(users_sql)
+# end
+
+# desc "Set up database"
+# task :db_drop do
+#     drop_users_table_sql = "DROP TABLE IF EXISTS users;"
+#     DB[:conn].execute(drop_users_table_sql)
 # end
 
 # desc "Seed database"

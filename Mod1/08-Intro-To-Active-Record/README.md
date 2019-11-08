@@ -2,6 +2,7 @@
 
 ### Review on ORMs
  - Bridge the gap between Ruby World and Database Land
+ - Let's create a USERS table again
 
 ### Introducing ActiveRecord::Base class
  - What happens when I comment out all of the code in User.rb?
