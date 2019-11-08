@@ -34,14 +34,7 @@
 - Spelling matters :/
 
 ### ActiveRecord::Base
-- Let's clear out our User class
-  - Now nothing works
-- Let's Inherit from ActiveRecord::Base
-  - Everything works again! But how?
-    - Review inheritance
-  - you can have both regular instance/class methods with ActiveRecord methods
-- Again, spelling and pluralization matters :/
-- `.plauralize` and `.singularize`
+- you can have both regular instance/class methods with ActiveRecord methods
 
 ### Seed File/Data
 - `rake db:seed` and source code
