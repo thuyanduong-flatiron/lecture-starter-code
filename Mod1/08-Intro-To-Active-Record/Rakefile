@@ -3,7 +3,7 @@ require_relative 'config/environment'
 
 # desc "Loads a console"
 # task :console do
-#     binding.pry
+#     Pry.start
 # end
 
 # desc "Set up database"
@@ -21,9 +21,4 @@ require_relative 'config/environment'
 # task :db_drop do
 #     drop_users_table_sql = "DROP TABLE IF EXISTS users;"
 #     DB[:conn].execute(drop_users_table_sql)
-# end
-
-# desc "Seed database"
-# task :db_seed do
-#     ruby "db/seeds.rb"
 # end

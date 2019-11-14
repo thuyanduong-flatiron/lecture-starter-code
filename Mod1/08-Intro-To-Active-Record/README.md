@@ -8,16 +8,14 @@
  - How does it know which model is mapped to which table?
  - You can have both regular instance/class methods with ActiveRecord methods
 
-#### Is there a need for our tools/console.rb file now??????
- - binding.pry
- - Let's introduce `rake` for that
-   - Why use rake?
-      - Because we can use it for so much more than starting a pry!!
-
 ### Active Record Set Up (and how that's different)
 - new gems in your `Gemfile`
 - `environment.rb` is a little different too
-- `Rakefile` can create custom tasks,
+
+#### Is there a need for our tools/console.rb file now??????
+ - binding.pry
+ - Let's introduce `rake` for that
+ - `Rakefile` can create custom tasks,
   - But if we utilize our new gems...
   - We get access to all these new tasks we can see with `rake -T`
 
