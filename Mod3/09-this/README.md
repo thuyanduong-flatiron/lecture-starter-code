@@ -7,6 +7,9 @@
 - the value of `this` changes depending on which object the function is invoked from
 - implied `this` for all functions
 - `this` is also known as the execution context
+  - window?
+  - obj?
+  - HTML node?
 
 ### Quick Aside: Strict Mode
 - undeclared variables not allowed
