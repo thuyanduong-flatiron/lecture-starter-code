@@ -24,3 +24,9 @@ App => Trainer => Pokemon
   </ul>
 </div>
 ```
+
+
+## Tips going into Mod 4
+- Spread operator to create a copy of an array or object 
+- Enhanced Object Literals/Object Initializer
+- Object destructuring 
