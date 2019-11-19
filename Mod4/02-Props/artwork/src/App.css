@@ -1,5 +1,11 @@
 .App {
+  margin: auto!important;
+}
+
+.card {
   text-align: center;
+  margin-left: auto!important;
+  margin-right: auto!important;
 }
 
 .App-logo {
