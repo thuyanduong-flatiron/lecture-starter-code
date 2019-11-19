@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Painting = (props) => {
-  let {paintingObj: {title, image, artist: {name}, dimensions: {height, width}}} = props
+  let {paintingObj:{title, image, artist: {name}, dimensions: {height, width}}} = props
   return (
     <div className="ui card">
       <div>
