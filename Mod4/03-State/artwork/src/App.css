@@ -1,9 +1,18 @@
 .App {
+  margin: auto!important;
+}
+
+.search {
+  color: black;
+}
+
+.card {
   text-align: center;
+  margin-left: auto!important;
+  margin-right: auto!important;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
 }
 
@@ -19,22 +28,5 @@
 }
 
 .App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.ui.menu{
-  text-align: left;
-}
-
-.ui.card{
-  margin: 10px auto;
+  color: #09d3ac;
 }
