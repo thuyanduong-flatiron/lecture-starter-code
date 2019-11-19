@@ -11,17 +11,13 @@
   - obj?
   - HTML node?
 
-### Quick Aside: Strict Mode
-- undeclared variables not allowed
-- `this` inside a function is undefined
-
 ### `this` has strange behavior inside object methods
 - this is always determined by the object to the left of the '.'
 - inside arrow functions, `this` takes on the value of the outer scope's `this`
 
 ### `bind`
-- bind returns a new function
-- can't rebind a function
-- how to see if a function has been bound
-- bind a function that has arguments
-- binding both `this` and certain arguments
+- bind returns a new function where the value of `this` is pre-set
+
+### Quick Aside: Strict Mode
+- undeclared variables not allowed
+- `this` inside a function is undefined
