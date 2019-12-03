@@ -17,7 +17,6 @@ ActiveRecord::Schema.define(version: 2018_08_28_151551) do
 
   create_table "users", force: :cascade do |t|
     t.string "username"
-    t.string "password_digest"
     t.string "avatar", default: "https://www.fillmurray.com/200/200"
     t.string "bio", default: "I love flavortown, USA"
     t.datetime "created_at", null: false

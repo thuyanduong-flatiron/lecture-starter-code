@@ -32,6 +32,10 @@
 
 
 
+#### When <some event> happens?
+- I want to change the DOM by manipulating state 
+ - and state changes will propagate as props to update all components
+
 
 
 

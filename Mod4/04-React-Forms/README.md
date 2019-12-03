@@ -9,6 +9,12 @@ A good practice is to have all forms/inputs control state
 
 
 
+### Mod 3 Thinking:
+ - When <some event> happens, I want to manipulate the DOM <how>?
+
+### Mod 4 Thinking: 
+ - When <some event> happens, I want to manipulate state in order to manipulat the DOM
+
  
 
 ## On Your Own
