@@ -5,12 +5,12 @@ class Doctor
   @@all = []
 
   def initialize(name, specialty)
-    @name = name
+    @name = name 
     @specialty = specialty
     @@all << self
   end
 
   def self.all
     @@all
-  end
-end
+  end 
+end 
