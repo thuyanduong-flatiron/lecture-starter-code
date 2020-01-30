@@ -1,12 +1,14 @@
-require_relative "../app/doctor.rb"
-require_relative "../app/patient.rb"
-require_relative "../app/doctor_patient.rb"
+require_relative "../app/user.rb"
+require_relative "../app/pin.rb"
+require_relative "../app/save.rb"
 require "pry"
 
-dr_strange = Doctor.new("Dr. Strange", "magic")
-dr_phil = Doctor.new("Dr. Phil", "feelings")
+ann = User.new("Ann", 30)
+paul = User.new("Paul", 34)
+su = User.new("Su", 32)
 
-ann = Patient.new("Ann", 30)
-paul = Patient.new("Paul", 30)
+pin1 = Pin.new("Low Carb Recipes", "Cook things without bread or rice")
+pin2 = Pin.new("Poetry", "One fish, two fish, red fish, blue fish")
+pin3 = Pin.new("Painting", "Oooooh, the colors....")
 
 binding.pry

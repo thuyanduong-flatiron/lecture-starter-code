@@ -1,5 +1,5 @@
 require "pry"
 
-class DoctorPatient
+class Save
 
 end 
