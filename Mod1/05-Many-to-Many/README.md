@@ -1,9 +1,9 @@
 # Many to Many Relationships
 
-# Problems with Kickstarter
- - backers are storing on the instances an array of projects
- - projects are storing on the instances an array of backers
- - What happens when we remove a project from a backer's array? Violated single source of truth
+# Problems with Many-To-Many relationships
+ - One model does NOT belong to another
+ - So whos' job is it store the relationship?
+ - And how would we even store this information in a database?
 
 # Solution
  - Another class or table!
