@@ -4,7 +4,7 @@ User.destroy_all
   User.create(
     username: Faker::TvShows::Friends.character.split(/ /).join(),
     # password: 'hi',
-    avatar: Faker::Fillmurray.image,
+    avatar: Faker::Avatar.image,
     bio: Faker::TvShows::Friends.quote
   )
 end

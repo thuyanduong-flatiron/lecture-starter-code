@@ -1,14 +1,14 @@
-Given that I create a table using:
+Given that we create a table using the SQL command:
 
 `CREATE TABLE users (id INTEGER PRIMARY KEY, username TEXT);`
 
 
 #### How would we....
-- Write the SQL to create a new user with a username of 'coffee_dad'?
+- Write the SQL to create a new user with a username of 'CoffeeDad'?
 - Write the SQL to get all Users?
-- Write the SQL to find an User by their id?
-- Write the SQL to update an Users's username (given their id)?
-- Write the SQL to delete an User (given their id)?
+- Write the SQL to find the User with id of 1?
+- Write the SQL to update the the username of the User with id of 1 to be 'CoffeeDude'?
+- Write the SQL to delete an User with an id of 1?
 
 
 
@@ -78,10 +78,10 @@ Given that I create a table using:
 
 ##### Answers
 `CREATE TABLE users (id INTEGER PRIMARY KEY, username TEXT);`
-`INSERT INTO users (username) VALUES ("ann");`
+`INSERT INTO users (username) VALUES ("CoffeeDad");`
 `SELECT * FROM users;`
-`SELECT * FROM users WHERE id = ?;`
-`UPDATE users SET name = ? WHERE id = ?;`
-`DELETE FROM users WHERE id = ?;`
+`SELECT * FROM users WHERE id = 1;`
+`UPDATE users SET name = 'CoffeeDude' WHERE id = 1;`
+`DELETE FROM users WHERE id = 1;`
 
 SELECT LAST_INSERT_ROWID()

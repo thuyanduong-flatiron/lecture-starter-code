@@ -13,15 +13,15 @@ class User
   def self.create(name)
     user = User.new(name)
     create_user_sql = "INSERT INTO users (username) VALUES (?)"
-    DB[:conn].execute(create_user_sql, name)
-    new_id = DB[:conn].execute("SELECT last_insert_rowid()")[0][0]
+    DB.execute(create_user_sql, name)
+    new_id = DB.execute("SELECT last_insert_rowid()")[0][0]
     user.id = new_id
     user
   end
 
   def self.all
     get_all_sql = "SELECT * FROM users"
-    db_users_array = DB[:conn].execute(get_all_sql)
+    db_users_array = DB.execute(get_all_sql)
     db_users_array.map{ |row|
       self.make_instance_from_row(row)
     }

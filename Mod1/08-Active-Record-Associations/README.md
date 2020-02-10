@@ -30,4 +30,5 @@
 2. Run migration
 3. Create the model
   * Remember, models MUST be singular, tables plural
-4. Build custom methods
+4. Create seed data
+5. Build custom methods

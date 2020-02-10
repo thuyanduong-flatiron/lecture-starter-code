@@ -5,9 +5,7 @@ require_all './lib'
 require_all './db'
 
 # setting up the database connection (old way)
-DB = {
-  conn: SQLite3::Database.new('db/twitter.db')
-}
+DB = SQLite3::Database.new('db/twitter.db')
 
 # setting up the database connection (new way)
 # ActiveRecord::Base.establish_connection(
