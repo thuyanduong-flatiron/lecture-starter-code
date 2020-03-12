@@ -9,21 +9,18 @@ x = 3
 puts x.class
 
 #### What is length and where does it come from?
-y = "flatiron"
+y = ["Ann", "Joe", "Jenny"]
 puts y.class
 puts y.length
 
 #### See all methods for some data
 puts y.methods
 
-#### Objects complain when they don't know how to execute methods
-y.respond_to_undefined_method
-
 #### Everything is probably just a method or syntactic sugar/vinegar
 y[1] is just shorthand for y.[](1)
 
 ```rb
-class String
+class Array
 
   def length
     # return length of string
@@ -36,94 +33,94 @@ class String
 end
 ```
 
-- build a Cat hash
-- `ella = {name: "Ella", fluffiness: 10}`
-- This is fine but `ella` is just a hash.  We can't extend this to have any behavior we might want a cat to do.  
+- build a Player hash
+- `maya = {name: "Maya Moore", age: 30}`
+- This is fine but `maya` is just a hash. We can't extend this to have any behavior we might want a player to do.  
 
 ### Important Terminology
- - Object vs Class vs Instance
+ - Class vs Instance
 
-Make a basic Cat class.
-- `Cat.new`
+Make a basic Player class.
+- `Player.new`
 ```rb
-class Cat
-    def meow
-        puts "meow..."
+class Player
+    def shout
+        puts "woohoo!"
     end
 end
 ```
 
-### Classes should have an initialize method
- - Gets called when you type .new()
-```rb
-class Cat
-    def initialize(name)
-      @name = name
-    end
-end
-```
 ### Instance Variable
 - What is the "@"?
     - Accessible throughout the class
     - Scope (local variables vs instance variables)
 
+- Define getter/setter
+```rb
+    def name=(new_name)
+        @name = new_name
+    end
+```
+
 - Add a getter method (doesn't have to have same variable name)
 ```rb
-    def color
-        @color
+    def name
+        @name
     end
 ```
-- Define getter/setter for color and fluffiness
+
+### Classes can have an initialize method
+ - Gets called when you type .new()
+
 ```rb
-    def color=(new_color)
-        @color = new_color
+class Player
+    def initialize(name)
+      @name = name
     end
+end
 ```
+
+- attr_accessor :name
+- attr_reader :age
+- attr_writer :shoe
+
 - custom getter/setters:
 ```rb
-    def fluffiness
-        if @fluffiness > 5
-            return "Very fluffy"
+    def shoe
+        if @shoe < 10
+            return "small"
         else
-            return "Not so fluffy"
+            return "big"
         end
     end
 
-    def fluffiness=(fluffiness)
-      if @fluffiness > 10
-        @fluffiness = 10
-      elsif < 0
-        @fluffiness = 0
+    def age=(age)
+      if @age < 0
+        @age = 0
       else
-        @fluffiness = fluffiness
+        @age = age
       end
     end
 ```
 
-- attr_accessor :color
-- attr_reader :name
-- attr_writer :fluffiness
-
-- default argument for `number_of_legs`
-
 #### self
 ```rb
-    def talking_cat
-        "My name is #{self.name}"
+    def shout
+        "My name is #{self.name}!"
     end
 ```
 - `@name vs self.name` -- often the same in practice, but the former accesses the variable
 directly while self.name gets the accessor method
 ```rb
-def talking_cat
-        "My name is #{self.name} and I have a fluffiness score of #{@fluffiness}.  I am #{self.fluffiness}"
+def shout
+        "My name is #{self.name} and I have #{@shoe} sized feet! I have #{self.shoe} sized feet!"
 end
 ```
 
 #### Class Methods
 ```rb
 self.say_class_name
-  puts "I am the Cat class"
+  puts "I am the Player class"
 end
 ```
 
@@ -134,7 +131,7 @@ end
 ```rb
 @@all = []
 
-self.get_all_cats
+self.get_all_players
   @@all
 end
 ```

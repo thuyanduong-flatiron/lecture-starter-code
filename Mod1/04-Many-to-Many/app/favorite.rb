@@ -1,5 +1,5 @@
 require "pry"
 
-class Save
+class Favorite
 
 end 

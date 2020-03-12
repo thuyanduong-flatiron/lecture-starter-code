@@ -4,8 +4,8 @@
 
 Our goal today is to add redux to an existing app. We'll cover:
 
-- `combineReducers`
 - `mapDispatchToProps`
+- `combineReducers`
 - Action Creators
 
 So far, we've only used redux in a tiny sample application. Let's refactor our paintr app to use redux!
