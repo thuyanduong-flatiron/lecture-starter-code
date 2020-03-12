@@ -1,13 +1,13 @@
 require_relative "../app/user.rb"
 require_relative "../app/pin.rb"
-require_relative "../app/favorite.rb"
+require_relative "../app/save.rb"
 require "pry"
 
 ann = User.new("Ann", 30)
-paul = User.new("Paul", 34)
+paul = User.new("Paul", 40)
 
-pin1 = Pin.new("Cats", "So fluffy, so floofy")
-pin2 = Pin.new("Dogs", "Who's a good girl! Who's a good boy!")
-pin3 = Pin.new("Coding", "Hello World")
+cats_pin = Pin.new("Cute cats", "So fluffy, so floofy")
+dogs_pin = Pin.new("Good dogs", "Here's a treat just for you!")
+code_pin = Pin.new("Coding tips", "Hello World")
 
 binding.pry

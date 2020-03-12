@@ -26,17 +26,17 @@ We're going to be exploring yet another social media application! The minimum ve
 
 ## Deliverables:
 * Create a Save class which will act as the join table for User and Pin 
-  * `Favorite#initialize` which takes a user and a favorite 
-  * `Favorite#user`
-  * `Favorite#pin`
-  * `Favorite.all`
+  * `Save#initialize` which takes a User and a Pin 
+  * `Save#user`
+  * `Save#pin`
+  * `Save.all`
 
 ### Building out meaningful relationships:
-* `User#pins` returns a list of pins favorited by the user
-* `Pin#users` return a list of users that favorited this pin
-* `User#favorite_pin` A user should be able to favorite a pin and that pin should be added to the user's list of pins. This methods should take in a pin instance as an argument 
+* `User#pins` returns a list of pins saved by the user
+* `Pin#users` return a list of users that saved this pin
+* `User#save_pin` A user should be able to save a pin and that pin should be added to the user's list of pins. This methods should take in a pin instance as an argument 
 
 ### Stretch features
-* `User#number_of_favorited_pins` returns the total number of pins that user like favorited
+* `User#number_of_saved_pins` returns the total number of pins that user like saved
 * `Pin#average_user_age` returns the average age of all users that saved this pin 
 
