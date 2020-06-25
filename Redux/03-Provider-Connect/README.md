@@ -7,11 +7,6 @@
 - Referencing store/state in different files
 
 
-### Enhanced object literals
-js```{value: value}```
-can be replaced with js```{value}```
-
-
 ## Redux dev tools
 - [Chrome Extension](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
 

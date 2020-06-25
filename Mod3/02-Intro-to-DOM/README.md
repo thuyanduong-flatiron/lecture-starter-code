@@ -1,9 +1,6 @@
 # Document Object Model vs. HTML
 - Tree of Nodes
 
-### DOM nodes, parent child sibling relationships
-- You can traverse from parent to child, or better yet, user selectors 
-
 ### Selectors and how to use them
 
 | Selector name                   | Return shape   | Return type    | Reference             |
@@ -14,12 +11,6 @@
 | `node.querySelector()`          | Single element | Element        | https://goo.gl/6Pqbcc |
 | `node.querySelectorAll()`       | Collection     | NodeList       | https://goo.gl/vTfXza |
 
-### Practice Manipulating the DOM
-- Twitter
-- content
-- css styling
-- [DIY](https://en.wikipedia.org/wiki/Document_Object_Model)
-- innerHTML vs. innerText
 
 ### DOM CRUD
 - `document.createElement()`
