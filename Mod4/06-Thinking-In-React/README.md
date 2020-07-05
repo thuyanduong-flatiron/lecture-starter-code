@@ -27,11 +27,15 @@ Step 5: Add Inverse Data Flow
 }
 
 .pokemon {
+  margin: 10px 10px;
   display: inline-block;
   width: 12%;
-  background-color: #FFD700;
+  background-color: #FAFAD2;
+}
+
+.pokemon-name {
   padding: 30px 0px 30px 0px;
-  margin: 10px 10px;
+  background-color: #FFD700;
 }
 
 .search {
@@ -54,6 +58,11 @@ Step 5: Add Inverse Data Flow
 ### Static components
 ```
 <img alt="Pokemon" width="200" src="https://d33wubrfki0l68.cloudfront.net/42936b3e4d03c9b7c5927e3752a36cef7ff8bdf0/53627/images/pokemon.png"/>
+
+<div className="pokemon card">
+  <div className="pokemon-name">NAME HERE</div>
+  <div>View Stats</div>
+</div>
 
 <div className="card details">
   <div>
