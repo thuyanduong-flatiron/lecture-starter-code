@@ -28,12 +28,12 @@ class App extends Component {
     this.setState({searchTerm: event.target.value})
   }
 
-  onSelectPainting = (event) => {
-    let paintingId = event.target.dataset.paintingId
-    let selectedPainting = this.state.paintingsList.find(painting => painting.id === paintingId)
-    this.setState({
-      selectedPainting: selectedPainting
-    })
+  onSelectPainting = (painting) => {
+    this.setState({selectedPainting: painting})
+  }
+
+  getFilteredPaintings = () => {
+    return this.state.paintingsList.filter(painting => painting.title.includes(this.state.searchTerm))
   }
 
   render() {
@@ -43,8 +43,7 @@ class App extends Component {
         <PaintingDetails painting={this.state.selectedPainting}/>
         <PaintingsList
           onSearchHandler={this.onSearchHandler}
-          filterTerm={this.state.searchTerm}
-          paintings={this.state.paintingsList}
+          paintings={this.getFilteredPaintings()}
           onSelectPainting={this.onSelectPainting}
         />
       </div>

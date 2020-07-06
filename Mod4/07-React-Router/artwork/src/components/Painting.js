@@ -9,7 +9,7 @@ const Painting = ({painting, onSelectPainting}) => {
           {painting.title}
         </div>
       </div>
-      <button data-painting-id={painting.id} onClick={onSelectPainting}>More Info</button>
+      <button onClick={() => onSelectPainting(painting)}>More Info</button>
     </div>
   )
 }
