@@ -22,29 +22,3 @@ A good practice is to have all forms/inputs control state
 - https://reactjs.org/docs/forms.html
 
 ## Upcoming Lab Review - Animal Lab (Combining It All)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-`<div className="right menu">
-  <div className="item">
-    <input className="ui search" placeholder="Search..." />
-  </div>
-</div>`
