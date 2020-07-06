@@ -7,7 +7,6 @@ const reducer = (oldState = {hogs:[]}, action) => {
     default:
       return oldState
   }
-  return oldState
 }
 
 export default reducer
