@@ -35,7 +35,6 @@
 
 # Wrapping it up:
 - Git clone vs git fork
-- Survey/Exit Ticket
 
 
 
