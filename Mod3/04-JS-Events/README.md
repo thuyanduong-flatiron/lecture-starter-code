@@ -2,11 +2,6 @@
 
 ## Asynchronous vs Synchronous?
 
-## Review the Execution Stack, Event Queue, Event Loop
-- example: setTimeout(function(){console.log("hello one second later")}, 1000)
-- example: setTimeout(function(){console.log("hello right away")}, 0)
-- events are asynchronous
-
 ## .addEventListener() on a DOM node
 - takes in a string for the name of the event, and a callback function to be invoked when the event happens
 - (optional) argument for the callback is the event itself

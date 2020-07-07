@@ -1,17 +1,6 @@
 # Functions
 - And the many ways to write them
 
-# Scope
-- where a variable is born, lives, and dies
-
-## What is Scope?
-- var vs. let vs. const
-- global vs. functional vs. block
-- Scope Chain
-- Lexical Scoping (where a function is written, NOT where it is invoked)
-
-- tells the JavaScript engine where in the program we are
-
 # Callbacks
 - passing functions as variables into other functions
 

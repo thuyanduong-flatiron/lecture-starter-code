@@ -4,13 +4,6 @@
 
 ### How do we handle async code?
 - For example, event listeners
-- So what would server communication look like since it's async?
-- https://pokeapi.co/api/v2/pokemon
-
-### Callback Hell
-- Nested callbacks within nested callbacks
-- Triangle shape
-- Really hard to read and manage
 
 ### Welcome Fetch
 - Built in web api
